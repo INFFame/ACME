@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Master Store</title>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="eliminar.js"></script>
+    
     <!-- FUENTE GOOGLE FONTS : Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -30,6 +32,7 @@
     {% load static%}
     <!-- Mis Estilos -->
     <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+    
 
 </head>
 
@@ -46,14 +49,14 @@
                 <div class="header-menu">
 
                     <div class="hm-logo">
-                        <a href="#">
+                        <a href="{% url 'index' %}">
                             <img src="{% static 'app/imaganes/logo.png' %}" alt="" style="width: 150px;">
                         </a>
                     </div>
 
                     <nav class="hm-menu">
                         <ul>
-                            <li><a href="h">Productos</a></li>
+                            <li><a href="#">Productos</a></li>
                             <li><a href="http://">Campañas</a></li>
                             <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
                             <li><a href="{% url 'contacto' %}">Contacto</a></li>

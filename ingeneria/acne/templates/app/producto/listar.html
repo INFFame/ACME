@@ -1,24 +1,9 @@
 {% extends 'app/base.html' %}
-{% block js %}
-<script>
-    function eliminarProducto(id) {
-        Swal.fire({
+<!-- Otros elementos del head -->
+    
 
-                "title": 'Estas seguro?',
-                "text": "No podras cambiarlo!",
-                "icon": 'warning',
-                "showCancelButton": true,
-                "confirmButtonColor": '#3085d6',
-                "cancelButtonColor": '#d33',
-                "confirmButtonText": 'Si, borralo!'
-            })
-            .then(function (result) {
-                if (result.isConfirmed) {
-                    window.location.href = "/eliminar-producto/" + id + "/"
-                }
-            })
-    }
-</script>
+{% block js %}
+
 {% endblock %}
 
 
@@ -43,8 +28,10 @@
                 <td>{{ p.stock }}</td>
                 <td>
                     <a href="{% url 'modificar_producto' p.codigo %}" class="btn btn-info btn-sm">modificar</a>
-                    <a href="{% url 'eliminar_producto' p.codigo %}"  class="btn btn-danger btn-sm">eliminar</a>
-                </td>
+                    <a href="{% url 'eliminar_producto' p.codigo %}" onclick="return confirm('¿Seguro que quieres eliminarlo?');"
+   class="btn btn-danger btn-sm">eliminar</a>
+
+
             </tr>
             {% endfor %}
             
