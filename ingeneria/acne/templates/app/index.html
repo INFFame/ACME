@@ -1,0 +1,431 @@
+ {% extends 'app/base.html' %}
+ {% load static %}
+ {% block contenido %}
+ 
+ <body>
+    
+
+       
+
+
+        <!-- =================================
+           BANNER
+        ================================== -->
+        <div class="hm-banner">
+            <div class="img-banner">
+                <img src="{% static 'app/imaganes/caja_navidad.jpg' %}" alt="">
+            </div>
+            <a href=""></a>
+        </div>
+
+        <!-- =================================
+           HOME CATEGROIAS
+        ================================== -->
+        <div class="hm-page-block">
+            <div class="container">
+                <div class="header-title">
+                    <h1  data-aos="fade-up" data-aos-duration="3000">Categorías</h1>
+                </div>
+
+                <div class="hm-grid-category">
+
+                    <div class="grid-item" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="#">
+                            <img src="{% static 'app/imaganes/caja_navidad2.jpg' %}" alt="">
+                            <div class="c-info">
+                                <h3>Caja de navidad</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-aos="fade-up" data-aos-duration="1500">
+                        <a href="#">
+                            <img src="{% static 'app/imaganes/caja_fiesta.jpg' %}" alt="">
+                            <div class="c-info">
+                                <h3>Caja de Fiestra patria</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-aos="fade-up" data-aos-duration="2000">
+                        <a href="#">
+                            <img src="{% static 'app/imaganes/arma_18.webp' %}" alt="">
+                            <div class="c-info">
+                                <h3>Arma tú caja de fiestas patrias</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-aos="fade-up" data-aos-duration="2000">
+                        <a href="#">
+                            <img src="{% static 'app/imaganes/arma_navidad.png' %}" alt="">
+                            <div class="c-info">
+                                <h3>Arma tú caja de fiestas navidad</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+         <!-- =================================
+           HOME PRODUCTOS DESTACADOS
+        ================================== -->
+        <div class="hm-page-block bg-fondo">
+
+            <div class="container">
+
+                <div class="header-title" data-aos="fade-up">
+                    <h1>Productos populares</h1>
+                </div>
+
+                <!-- TABS -->
+                <ul class="hm-tabs" data-aos="fade-up">
+                    <li class="hm-tab-link">
+                        Bebidas y Licores
+                    </li>
+
+                    <li class="hm-tab-link ">
+                        Despensa
+                    </li>
+
+                    <li class="hm-tab-link ">
+                        Desayuno
+                    </li>
+
+                    <li class="hm-tab-link ative">
+                        En oferta
+                    </li>
+
+                </ul>
+
+                <!-- CONTENIDO DE LOS TABS -->
+                <!-- Zapatillas -->
+                <div class="tabs-content" data-aos="fade-up">
+
+                    <div class="grid-product">
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/pisco.png' %}" alt="">
+                                </a>
+                                <span class="stin stin-new">Nuevo</span>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Pisco Sour 18° Botella, 1 L</h3></a>
+                                <div class="precio">
+                                    <span>$ 4.450</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/vino.png' %}" alt="">
+                                </a>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Vino Diablo Dark Red Ensamblaje, 750 cc</h3></a>
+                                <div class="precio">
+                                    <span>$ 6.650</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/espumante2.png' %}" alt="">
+                                </a>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Espumante Ruby 8G, 750 cc.</h3></a>
+                                <div class="precio">
+                                    <span>$ 5.150</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/bebida.png' %}" alt="">
+                                </a>
+                                <span class="stin stin-new">Nuevo</span>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Bebida Zero Sabor Papaya, 1,5 L</h3></a>
+                                <div class="precio">
+                                    <span>$ 1.500</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Moda -->
+                <div class="tabs-content" data-aos="fade-up">
+
+                    <div class="grid-product">
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/arroz.png' %}" alt="">
+                                </a>
+                                <span class="stin stin-new">Nuevo</span>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Arroz Grado 2 Bolsa, 1 kg</h3></a>
+                                <div class="precio">
+                                    <span>$ 1.500</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/tallarines.png' %}" alt="">
+                                </a>
+                                <span class="stin stin-new">Nuevo</span>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Fideos Spaghetti 5 Bolsa, 400 g</h3></a>
+                                <div class="precio">
+                                    <span>$ 1.050</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/tarrodurazno.png' %}" alt="">
+                                </a>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Duraznos en Mitades Tarro, 822 g</h3></a>
+                                <div class="precio">
+                                    <span>$ 2.000</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/aceite.png' %}" alt="">
+                                </a>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Aceite Vegetal Botella, 1 L</h3></a>
+                                <div class="precio">
+                                    <span>$ 2.450</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Tecnología -->
+                <div class="tabs-content" data-aos="fade-up">
+
+                    <div class="grid-product">
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/azucar.png' %}" alt="">
+                               </a>
+                                <span class="stin stin-new">Nuevo</span>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Azúcar Blanca, 1 Kg</h3></a>
+                                <div class="precio">
+                                    <span>$ 1.350</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/cafe.png' %}" alt="">
+                               </a>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Cafe Tradicion Tarro, 150 gr</h3></a>
+                                <div class="precio">
+                                    <span>$ 3.000</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/te.png' %}" alt="">
+                              </a>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Té negro yellow label, 50 Un</h3></a>
+                                <div class="precio">
+                                    <span>$ 2.000</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/frugule.png' %}" alt="">
+                             </a>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Gomita Citric, 110 g</h3></a>
+                                <div class="precio">
+                                    <span>$ 1.090</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- En oferta -->
+                <div class="tabs-content" data-aos="fade-up">
+
+                    <div class="grid-product">
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/papas.png' %}" alt="">
+                             </a>
+                                <span class="stin stin-oferta">Oferta</span>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Papas Fritas Tarro Stax Crema y Cebolla, 134 g</h3></a>
+                                <div class="precio">
+                                    <span>$ 1.800</span>
+                                    <span class="thash">$ 2.000</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/ketchup.png' %}" alt="">
+                               </a>
+                                <span class="stin stin-oferta">Oferta</span>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Ketchup Regular Doypack, 900 g</h3></a>
+                                <div class="precio">
+                                    <span>$  2.790</span>
+                                    <span class="thash">$ 3.250</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/mayonesa.png' %}" alt="">
+                                </a>
+                                <span class="stin stin-oferta">Oferta</span>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Mayonesa Regular Doypack, 900 g</h3></a>
+                                <div class="precio">
+                                    <span>$ 2.790</span>
+
+                                    <span class="thash">$ 3.450</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                        <div class="product-item">
+                            <div class="p-portada">
+                                <a href="">
+                                    <img src="{% static 'app/imaganes/mani.png' %}" alt="">
+                               </a>
+                                <span class="stin stin-oferta">Oferta</span>
+                            </div>
+
+                            <div class="p-info">
+                               <a href=""> <h3>Maní Sin Sal, 250 g</h3></a>
+                                <div class="precio">
+                                    <span>$ 1.000</span>
+                                    <span class="thash">$ 1.200</span>
+                                </div>
+                                <a href="#" class="hm-btn btn-primary uppercase">AGREGAR AL CARRITO</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+ {% endblock %}

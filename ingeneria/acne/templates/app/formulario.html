@@ -1,0 +1,36 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+    <script src="{% static 'js/formulario.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'app/css/style.css'%}">
+    <title>Contacto</title>
+
+<main class="carrusel">
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <span id="nombreError" class="error-message"></span><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br>
+        <span id="apellidoError" class="error-message"></span><br>
+
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
+        <span id="fechaNacimientoError" class="error-message"></span><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena"><br>
+        <span id="contrasenaError" class="error-message"></span><br>
+
+        <label for="repetirContrasena">Repetir contraseña:</label>
+        <input type="password" id="repetirContrasena" name="repetirContrasena"><br>
+        <span id="repetirContrasenaError" class="error-message"></span><br>
+
+        <input type="submit" value="Enviar">
+        <br>
+        <input type="reset" value="Limpiar campos">
+    </form>
+{% endblock %}
