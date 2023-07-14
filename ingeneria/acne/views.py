@@ -22,6 +22,12 @@ def formulario(request):
 def login(request):
     return render(request, 'app/login.html')
 
+def contacto(request):
+    return render(request, 'app/contacto.html')
+
+def nosotros(request):
+    return render(request, 'app/nosotros.html')
+
 def cajas(request, codigo):
     producto = get_object_or_404(Producto, codigo=codigo)
     return render(request, 'app/cajas.html', {'producto': producto})
