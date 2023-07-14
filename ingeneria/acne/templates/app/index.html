@@ -26,47 +26,23 @@
                 <div class="header-title">
                     <h1  data-aos="fade-up" data-aos-duration="3000">Categorías</h1>
                 </div>
-
-                <div class="hm-grid-category">
-
-                    <div class="grid-item" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="#">
-                            <img src="{% static 'app/imaganes/caja_navidad2.jpg' %}" alt="">
-                            <div class="c-info">
-                                <h3>Caja de navidad</h3>
-                            </div>
-                        </a>
+                <div class="productos">
+                    
+                    <div class="hm-grid-category">
+                        {% for p in productos %}
+                        <div class="grid-item" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="#">
+                                {% if p.imagen %}
+                                <img src="{{ p.imagen.url }}" alt="">
+                                {% endif %}
+                                <div class="c-info">
+                                    <h3>{{ p.nombre | title }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        {% endfor %}
                     </div>
-
-                    <div class="grid-item" data-aos="fade-up" data-aos-duration="1500">
-                        <a href="#">
-                            <img src="{% static 'app/imaganes/caja_fiesta.jpg' %}" alt="">
-                            <div class="c-info">
-                                <h3>Caja de Fiestra patria</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="grid-item" data-aos="fade-up" data-aos-duration="2000">
-                        <a href="#">
-                            <img src="{% static 'app/imaganes/arma_18.webp' %}" alt="">
-                            <div class="c-info">
-                                <h3>Arma tú caja de fiestas patrias</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="grid-item" data-aos="fade-up" data-aos-duration="2000">
-                        <a href="#">
-                            <img src="{% static 'app/imaganes/arma_navidad.png' %}" alt="">
-                            <div class="c-info">
-                                <h3>Arma tú caja de fiestas navidad</h3>
-                            </div>
-                        </a>
-                    </div>
-
                 </div>
-
             </div>
         </div>
 

@@ -9,7 +9,7 @@ def index(request):
     data = {
         'productos': productos
     }
-    return render(request, 'app/index.html',data)
+    return render(request, 'app/index.html', data)
 
 def formulario(request):
     data = {
