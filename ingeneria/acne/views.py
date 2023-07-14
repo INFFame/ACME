@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Producto
+
 
 
 # Create your views here.
@@ -9,6 +10,7 @@ def index(request):
     data = {
         'productos': productos
     }
+    
     return render(request, 'app/index.html', data)
 
 def formulario(request):
@@ -19,3 +21,8 @@ def formulario(request):
 
 def login(request):
     return render(request, 'app/login.html')
+
+def cajas(request, codigo):
+    producto = get_object_or_404(Producto, codigo=codigo)
+    return render(request, 'app/cajas.html', {'producto': producto})
+

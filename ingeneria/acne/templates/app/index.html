@@ -31,7 +31,7 @@
                     <div class="hm-grid-category">
                         {% for p in productos %}
                         <div class="grid-item" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="#">
+                            <a href="{% url 'cajas' p.codigo %}">
                                 {% if p.imagen %}
                                 <img src="{{ p.imagen.url }}" alt="">
                                 {% endif %}

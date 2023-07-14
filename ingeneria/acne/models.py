@@ -26,3 +26,4 @@ class Contenido(models.Model):
 
     def __str__(self):
         return self.nombreContenido
+    
