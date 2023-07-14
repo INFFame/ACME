@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+MESSAGE_STORAGE ="django.contrib.messages.storage.cookie.CookieStorage"
 # Application definition
 
 INSTALLED_APPS = [
@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap4',
     'django.contrib.humanize',
+    
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap4' 
+
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 MIDDLEWARE = [
